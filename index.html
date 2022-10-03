@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello friend</title>
+    <link rel="stylesheet" href="Welpage.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="head">
+        Web
+        <div class="user"><br>
+            ~card
+        </div>
+    </div>
+    <div class="welPage">
+
+        <div class="body">
+
+            <div class="ctnainer">
+                <div class="card">
+
+                    <div class="hellTexbtn" onclick="fun1()">( Look In )</div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="userName">About~ <label class="usNme">Sudarshan</label>
+        </div>
+    </div>
+
+
+
+    <div class="portofile">
+
+
+        <div class="proCard">
+            <div class="circleImg">
+                <img src="img.png" width="200" id="proImg">
+            </div>
+
+            <div class="pName">
+                Sudarshan karn(School boy)
+            </div>
+            <div class="Age">
+
+                Age - 13
+
+            </div>
+            <div class="Bd">
+                Birthday - 7th February
+            </div>
+
+            <div class="whap">
+                Whatsapp - 8342037672
+            </div>
+            <div class="insta">
+                Instagram - <a href="https://www.instagram.com/webnanime/">@webnanime</a>
+            </div>
+            <div class="thought" onclick="fun2()">
+                My Thoughts
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+
+    let fun1 = () => {
+        document.querySelector(" .portofile").style.display = "flex"
+        document.querySelector(".welPage").style.display = "none"
+    }
+    let fun2 = () => {
+        alert("Hello, It may possible that I may know you. But I am sure you know me after entering in this web page. If you are my friend just text me about this web card. And the fact is this web card is really created by me, If u want yours you can contact me.  Thanks for checking out this page  ")
+    }
+
+</script>
+
+</html>

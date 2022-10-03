@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    overflow: hidden;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow: hidden;
+
+    scroll-behavior: smooth;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(31, 33, 34);
+}
+
+.welPage {
+    display: block;
+}
+
+.ctnainer {
+    overflow: hidden;
+    border-radius: 50%;
+    scroll-behavior: smooth;
+    background-color: rgb(60, 64, 66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    height: 5cm;
+    width: 5cm;
+    border-bottom-left-radius: 60%;
+    border-top-right-radius: 20%;
+    border-radius: 100px;
+    box-shadow: 0 0 40px rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    transform: rotate(45deg);
+    align-items: center;
+    animation: rotlod 1.5s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes rotlod {
+    0% {
+        position: relative;
+        left: -1cm;
+        transform: rotate(20deg);
+    }
+
+    100% {
+        transform: rotate(70deg);
+        position: relative;
+        left: 1cm;
+
+    }
+
+
+}
+
+
+
+.hellTexbtn {
+    font-family: Digestion demo;
+    font-size: 50px;
+    /* color: rgba(238, 39, 39, 0.966); */
+    color: yellow;
+    text-shadow: 0 0 30px yellow;
+    /* text-shadow: 0 0 30px red; */
+    border-bottom: 3px solid yellow;
+    border-top: 3px solid yellow;
+    border-radius: 43%;
+    background-color: rgba(255, 0, 0, 0.068);
+    transform: rotate(-45deg);
+    cursor: pointer;
+
+}
+
+.hellTexbtn:hover {
+    transition: all 0.5s linear;
+    color: white;
+    border-color: white;
+    text-shadow: 0 0 30px rgb(255, 255, 255);
+
+}
+
+.user {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: green;
+    position: relative;
+    animation: webcd2 1.5s ease-in-out infinite alternate-reverse;
+
+}
+
+@keyframes webcd2 {
+    0% {
+        color: green;
+    }
+
+    100% {
+        color: yellow;
+    }
+}
+
+.userName {
+    color: blueviolet;
+    font-size: 0.6cm;
+    position: relative;
+    z-index: 3;
+    bottom: 3cm;
+    position: absolute;
+    font-family: Forte;
+    /* display: none; */
+}
+
+.usNme {
+    color: transparent;
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.usNme::before {
+    height: 100%;
+    width: 100%;
+    content: "Sudarshan";
+    position: absolute;
+    color: rgba(116, 226, 43, 0.836);
+    animation: load 2s ease-in-out infinite alternate-reverse;
+    overflow: hidden;
+    border-right: 2px solid white;
+}
+
+@keyframes load {
+    0% {
+        width: 110%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
